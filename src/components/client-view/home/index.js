@@ -30,25 +30,19 @@ function variants() {
 const socialIcons = [
   {
     id: "facebook",
-    icon: (
-      <FaFacebookF color="rgba(13,183,96,1)" className="w-[40px] h-[40px]" />
-    ),
+    icon: <FaFacebookF color="#6C2DC7" className="w-[40px] h-[40px]" />,
   },
   {
     id: "twitter",
-    icon: <FaTwitter color="rgba(13,183,96,1)" className="w-[40px] h-[40px]" />,
+    icon: <FaTwitter color="#6C2DC7" className="w-[40px] h-[40px]" />,
   },
   {
     id: "linkedin",
-    icon: (
-      <FaLinkedinIn color="rgba(13,183,96,1)" className="w-[40px] h-[40px]" />
-    ),
+    icon: <FaLinkedinIn color="#6C2DC7" className="w-[40px] h-[40px]" />,
   },
   {
     id: "instagram",
-    icon: (
-      <FaInstagram color="rgba(13,183,96,1)" className="w-[40px] h-[40px]" />
-    ),
+    icon: <FaInstagram color="#6C2DC7" className="w-[40px] h-[40px]" />,
   },
 ];
 
@@ -73,8 +67,8 @@ export default function ClientHomeView({ data }) {
                       key={index} // Ensure each item has a unique key
                       className={`${
                         index === 2 || index === 3
-                          ? "text-green-main"
-                          : "text-[#000]"
+                          ? "text-[#2C94C0]"
+                          : "text-[#6C2DC7]"
                       }`}
                     >
                       {item}{" "}
@@ -82,7 +76,7 @@ export default function ClientHomeView({ data }) {
                   ))
                 : null}
             </h1>
-            <p className="text-[#000] mt-4 mb-8 font-bold">
+            <p className="text-[#2C94C0] mt-4 mb-8 font-bold">
               {data && data.length ? data[0]?.summary : null}
             </p>
             <motion.div className="flex gap-3 cursor-pointer">
@@ -109,7 +103,7 @@ export default function ClientHomeView({ data }) {
             <motion.div
               drag
               dragConstraints={containerRef}
-              className="w-[400px] h-[400px] relative bg-green-main"
+              className="w-[400px] h-[400px] relative bg-[#6C2DC7]"
             >
               <div className="w-[400px] h-[400px] top-[40px] left-[-30px] rounded-lg border-[6px] border-[#000000] absolute"></div>
               <Image

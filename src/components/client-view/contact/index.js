@@ -75,7 +75,9 @@ export default function ClientContactView() {
             {"Contact Me".split(" ").map((item, index) => (
               <span
                 key={index} // Added key here
-                className={`${index === 1 ? "text-green-main" : "text-[#000]"}`}
+                className={`${
+                  index === 1 ? "text-[#6C2DC7]" : "text-[#2C94C0]"
+                }`}
               >
                 {item}{" "}
               </span>
@@ -93,7 +95,10 @@ export default function ClientContactView() {
                     {" "}
                     {/* Added key here */}
                     <div className="relative">
-                      <label className="text-sm text-[#000]">
+                      <label
+                        className="text-sm text-[#2C94C0]
+"
+                      >
                         {controlItem.label}
                       </label>
                       <textarea
@@ -106,7 +111,8 @@ export default function ClientContactView() {
                             [controlItem.name]: e.target.value,
                           })
                         }
-                        className="w-full border-green-main border-[2px] bg-[#ffffff] rounded  h-32 text-base outline-none text-[#000000] py-1 px-3 resize-none leading-6"
+                        className="w-full border-[#6C2DC7] border-[2px] bg-[#ffffff] rounded  h-32 text-base outline-none text-[#2C94C0]
+ py-1 px-3 resize-none leading-6"
                       ></textarea>
                     </div>
                   </div>
@@ -115,7 +121,10 @@ export default function ClientContactView() {
                     {" "}
                     {/* Added key here */}
                     <div className="relative">
-                      <label className="text-sm text-[#000]">
+                      <label
+                        className="text-sm text-[#2C94C0]
+"
+                      >
                         {controlItem.label}
                       </label>
                       <input
@@ -128,7 +137,8 @@ export default function ClientContactView() {
                             [controlItem.name]: e.target.value,
                           })
                         }
-                        className="w-full border-green-main border-[2px] bg-[#ffffff] rounded  text-base outline-none text-[#000000] py-1 px-3 leading-6"
+                        className="w-full border-[#6C2DC7] border-[2px] bg-[#ffffff] rounded  text-base outline-none text-[#2C94C0]
+ py-1 px-3 leading-6"
                       />
                     </div>
                   </div>
@@ -143,7 +153,7 @@ export default function ClientContactView() {
                 <button
                   disabled={!isValidForm()}
                   onClick={handleSendMessage}
-                  className="disabled:opacity-50 py-3 lg:py-4 px-12 lg:px-16 text-white-500 font-semibold rounded-lg text-2xl tracking-widest bg-green-main outline-none"
+                  className="disabled:opacity-50 py-3 lg:py-4 px-12 lg:px-16 text-white-500 font-semibold rounded-lg text-2xl tracking-widest bg-[#6C2DC7] outline-none"
                 >
                   Send Message
                 </button>

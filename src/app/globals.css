@@ -8,26 +8,30 @@
   --background-end-rgb: 255, 255, 255;
 }
 
-
 html {
   font-family: "Rubik", sans-serif;
 }
+
 body {
   background: bg-white-500
 }
+
 p {
   color:  #000000
 }
+
 .animation-hover:after {
   background: none repeat scroll 0 0 transparent;
   content: "";
   height: 2px;
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  @apply w-0 bg-green-main left-1/2 block bottom-0 absolute;
+  @apply w-0 bg-[#6C2DC7] left-1/2 block bottom-0 absolute;
 }
+
 .animation-active:after {
   @apply left-0 w-full;
 }
+
 .animation-hover:hover:after {
   @apply left-0 w-full;
 }
@@ -39,31 +43,35 @@ li.custom-list:before {
   width: 0.4em;
   height: 1em;
   background-repeat: no-repeat;
-
   background-size: 0.4em 0.7em;
   background-position: 0 0.3em;
   font-size: 300%;
   top: -0.35em;
   @apply absolute block;
 }
+
 li.circle-check:before {
   background-image: url("/assets/Icon/checklist.svg");
   left: -0.7em;
   top: -0.4em;
 }
+
 li.check:before {
   left: -0.5em;
   background-image: url("/assets/Icon/jam_check.svg");
   top: -0.5em;
   font-size: 400%;
 }
+
 /* Slideshow */
 .slick-dots li {
   @apply inline-block;
 }
+
 .slick-dots span {
   @apply bg-gray-500;
 }
+
 .slick-dots .slick-active span {
   @apply bg-orange-500 rounded-l-full rounded-r-full w-12;
 }
@@ -76,11 +84,11 @@ li.check:before {
 body::-webkit-scrollbar {
   width: 5px;
 }
- 
+
 body::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
- 
+
 body::-webkit-scrollbar-thumb {
   background-color: darkgrey;
   outline: 1px solid slategrey;
@@ -96,7 +104,7 @@ body::-webkit-scrollbar-thumb {
   transform-origin: 0%;
 }
 
-.project-wrapper{
+.project-wrapper {
   display: flex;
   list-style: none;
   height: 350px;
@@ -127,7 +135,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: green;
+  background: #6C2DC7; /* Replaced green with the new color */
   -webkit-border-radius: 1ex;
 }
 
@@ -136,7 +144,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 #progress {
-
   transform: rotate(-90deg);
 }
 
@@ -155,14 +162,14 @@ circle {
   stroke: red;
 }
 
-.MuiTimelineItem-root::before{
+.MuiTimelineItem-root::before {
   flex: 0 !important;
 }
 
-.MuiTimelineDot-root{
-  background-color: rgba(47, 171, 115, 1) !important;
+.MuiTimelineDot-root {
+  background-color: #6C2DC7 !important; /* Replaced green with the new color */
 }
 
-.MuiTimelineConnector-root{
-  background-color: rgba(47, 171, 115, 1) !important;
+.MuiTimelineConnector-root {
+  background-color: #6C2DC7 !important; /* Replaced green with the new color */
 }

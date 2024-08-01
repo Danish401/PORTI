@@ -64,7 +64,7 @@ export default function ClientAboutView({ data }) {
       id="about"
     >
       <div className="w-full flex">
-        <AnimationWrapper className="rounded-lg w-full grid-flow-row grid grid-cols-1 sm:grid-cols-3 py-9 divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-green-main bg-white-500 z-10">
+        <AnimationWrapper className="rounded-lg w-full grid-flow-row grid grid-cols-1 sm:grid-cols-3 py-9 divide-y-2 sm:divide-y-0 sm:divide-x-2 divide-[#6C2DC7] bg-white-500 z-10">
           {aboutDataInfo.map((infoItem, index) => (
             <motion.div
               className={`flex items-center justify-start
@@ -82,10 +82,13 @@ export default function ClientAboutView({ data }) {
             >
               <div className="flex m-0 w-40 sm:w-auto">
                 <div className="flex flex-col">
-                  <p className="text-[50px] text-green-main font-bold">
+                  <p className="text-[50px] text-[#6C2DC7] font-bold">
                     {infoItem.value}+
                   </p>
-                  <p className="text-[25px] font-bold text-[#000000]">
+                  <p
+                    className="text-[25px] font-bold text-[#2C94C0]
+"
+                  >
                     {infoItem.label}
                   </p>
                 </div>
@@ -100,13 +103,20 @@ export default function ClientAboutView({ data }) {
             {headingText.split(" ").map((item, index) => (
               <span
                 key={index} // Add the key prop here
-                className={`${index === 6 ? "text-green-main" : "text-[#000]"}`}
+                className={`${
+                  index === 6 ? "text-[#6C2DC7]" : "text-[#2C94C0]"
+                }`}
               >
                 {item}{" "}
               </span>
             ))}
           </h1>
-          <p className="text-[#000] mt-4 mb-8 font-bold">{data?.aboutme}</p>
+          <p
+            className="text-[#2C94C0]
+ mt-4 mb-8 font-bold"
+          >
+            {data?.aboutme}
+          </p>
         </div>
       </AnimationWrapper>
       <div className="grid grid-flow-row sm:grid-flow-col grid-cols-1 sm:grid-cols-2 gap-8">
@@ -138,7 +148,10 @@ export default function ClientAboutView({ data }) {
                 className="w-full flex justify-center items-center"
                 variants={skillItemVariant}
               >
-                <button className="whitespace-nowrap text-ellipsis overflow-hidden py-3 w-[160px] px-6 border-[2px] border-green-main bg-[#fff] text-[#000] font-semibold rounded-lg text-xl tracking-widest hover:shadow-green-main transition-all outline-none">
+                <button
+                  className="whitespace-nowrap text-ellipsis overflow-hidden py-3 w-[160px] px-6 border-[2px] border-[#6C2DC7] bg-[#fff] text-[#2C94C0]
+ font-semibold rounded-lg text-xl tracking-widest hover:shadow-[#6C2DC7] transition-all outline-none"
+                >
                   {skill}
                 </button>
               </motion.div>

@@ -31,7 +31,7 @@ export default function ClientExperienceAndEducationView({
                   <span
                     key={index} // Add the key prop here
                     className={`${
-                      index === 1 ? "text-green-main" : "text-[#000]"
+                      index === 1 ? "text-[#6C2DC7]" : "text-[#2C94C0]"
                     }`}
                   >
                     {item}{" "}
@@ -49,11 +49,11 @@ export default function ClientExperienceAndEducationView({
                         <TimelineItem key={index}>
                           {" "}
                           <TimelineSeparator>
-                            <TimelineDot className="bg-green-main" />
-                            <TimelineConnector className="bg-green-main" />
+                            <TimelineDot className="bg-[#6C2DC7]" />
+                            <TimelineConnector className="bg-[#6C2DC7]" />
                           </TimelineSeparator>
                           <TimelineContent>
-                            <div className="border-[2px] p-4 rounded-[8px] border-green-main mt-[14px] ml-[16px]">
+                            <div className="border-[2px] p-4 rounded-[8px] border-[#6C2DC7] mt-[14px] ml-[16px]">
                               <p className="font-bold">
                                 {experienceItem.duration}
                               </p>
@@ -85,7 +85,7 @@ export default function ClientExperienceAndEducationView({
                   <span
                     key={index} // Add the key prop here
                     className={`${
-                      index === 1 ? "text-green-main" : "text-[#000]"
+                      index === 1 ? "text-[#6C2DC7]" : "text-[#2C94C0]"
                     }`}
                   >
                     {item}{" "}
@@ -103,11 +103,11 @@ export default function ClientExperienceAndEducationView({
                         <TimelineItem key={index}>
                           {" "}
                           <TimelineSeparator>
-                            <TimelineDot className="bg-green-main" />
-                            <TimelineConnector className="bg-green-main" />
+                            <TimelineDot className="bg-[#6C2DC7]" />
+                            <TimelineConnector className="bg-[#6C2DC7]" />
                           </TimelineSeparator>
                           <TimelineContent>
-                            <div className="border-[2px] p-4 rounded-[8px] border-green-main mt-[14px] ml-[16px]">
+                            <div className="border-[2px] p-4 rounded-[8px] border-[#6C2DC7] mt-[14px] ml-[16px]">
                               <p className="font-bold">{educationItem.year}</p>
                               <h3 className="font-extrabold mt-2">
                                 {educationItem.college}
